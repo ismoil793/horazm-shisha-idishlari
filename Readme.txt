@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+Author Ismoil Shokirov
 
-Template Name: Multi
-Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Template Name: Horazm Shisha Idishlari
+Webpage: https://hsi.uz
+Author: https://shokirov.uz
