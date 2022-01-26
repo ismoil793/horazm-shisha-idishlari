@@ -50,21 +50,23 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
-    .then(response => {
-      if( response.ok ) {
-        return response.text()
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
+
+
+    var token = "5134193514:AAHfjaWuP74G-7X4zBSH-apNQ4FfHRMgCS0"
+    var chat_id = "-636137838"
+    var title = document.getElementById("subject").value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var body = document.getElementById("message").value;
+    var message = "От: " + name + "%0AEmail: " + email + "%0A%0A" + "Тема: " + title + "%0A%0A" + body;
+    var url = "https://api.telegram.org/bot" + token + "/sendMessage?text=" + message + "&chat_id=" + chat_id;    
+
+    fetch(url, {
+      method: 'POST'
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.ok) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
@@ -72,7 +74,7 @@
       }
     })
     .catch((error) => {
-      displayError(thisForm, error);
+      displayError(thisForm, "Что-то пошло не так...");
     });
   }
 
