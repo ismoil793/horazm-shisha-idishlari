@@ -1175,9 +1175,11 @@ section {
    font-size: 26px;
    font-weight: 700;
    margin-bottom: 20px;
+   text-align: center;
 }
 .portfolio-details .portfolio-description p {
    padding: 0;
+   text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -1682,4 +1684,18 @@ section {
 
 textarea {
    resize: none;
+}
+
+.product-page-img {
+   background: rgb(231, 229, 230);
+   background: radial-gradient(
+      circle,
+      rgba(231, 229, 230, 1) 0%,
+      rgba(197, 195, 196, 1) 100%
+   );
+}
+
+.product-page-img img {
+   display: block;
+   object-fit: cover;
 }
