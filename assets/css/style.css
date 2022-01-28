@@ -1138,6 +1138,7 @@ section {
 }
 .portfolio-details .portfolio-details-slider img {
    width: 100%;
+   max-height: 750px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
    margin-top: 20px;
