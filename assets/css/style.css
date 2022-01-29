@@ -1885,3 +1885,14 @@ textarea {
    font-size: 16px;
    padding: 16px 32px;
  }
+
+ #popular .carousel-control-next-icon, 
+ #popular .carousel-control-prev-icon {
+   background: #aaa;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+}
