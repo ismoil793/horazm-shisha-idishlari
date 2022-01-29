@@ -304,4 +304,24 @@
     */
    var currentYear = select('#curYear')
    currentYear.innerHTML = new Date().getFullYear()
+
+   /**
+    * Slider Of products Home Page
+    */
+    let popularCarouselIndicators = select('#popular-carousel-indicators')
+    let popularCarouselItems = select('#popularCarousel .carousel-item', true)
+ 
+    popularCarouselItems.forEach((item, index) => {
+       index === 0
+          ? (popularCarouselIndicators.innerHTML +=
+               "<li data-bs-target='#popularCarousel' data-bs-slide-to='" +
+               index +
+               "' class='active'></li>")
+          : (popularCarouselIndicators.innerHTML +=
+               "<li data-bs-target='#popularCarousel' data-bs-slide-to='" +
+               index +
+               "'></li>")
+    })
+
+
 })()
