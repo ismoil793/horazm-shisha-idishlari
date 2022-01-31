@@ -78,6 +78,16 @@ h6 {
       transform: rotate(360deg);
    }
 }
+
+.blue-txt {
+   color: #153058;
+}
+
+.txt-gradient {
+   background: -webkit-linear-gradient(#da7900, #a82e00);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -297,6 +307,10 @@ h6 {
    .navbar ul {
       display: none;
    }
+   #popular .carousel-control-next,
+   #popular .carousel-control-prev {
+      display: none;
+   }
 }
 .navbar-mobile {
    position: fixed;
@@ -497,8 +511,14 @@ h6 {
    color: #fff;
    -webkit-animation-delay: 0.8s;
    animation-delay: 0.8s;
-   background: var(--main-color);
    margin-top: 15px;
+   /* background: var(--main-color); */
+   background: rgb(218, 121, 0);
+   background: linear-gradient(
+      90deg,
+      rgba(218, 121, 0, 1) 0%,
+      rgba(168, 46, 0, 1) 85%
+   );
 }
 #hero .btn-get-started:hover {
    background: #ef6445;
