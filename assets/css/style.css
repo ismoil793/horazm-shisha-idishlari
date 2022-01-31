@@ -1787,7 +1787,8 @@ textarea {
    flex-direction: column-reverse;
 }
 
-.squares-item.first, .squares-item.last {
+.squares-item.first,
+.squares-item.last {
    flex-direction: column;
 }
 
@@ -1803,7 +1804,7 @@ textarea {
    padding: 60px;
    background-color: transparent;
    /* background-color: #152332; */
-   background-color: #D6E3F5;
+   background-color: #d6e3f5;
    height: 500px;
    display: flex;
    justify-content: center;
@@ -1827,17 +1828,16 @@ textarea {
    object-fit: cover;
 }
 
-.squares-item.first .squares-item-content, 
+.squares-item.first .squares-item-content,
 .squares-item.last .squares-item-content {
-   background-color: #FF6706;
+   background-color: #ff6706;
    color: #fff;
 }
-
 
 .about-btn {
    font-size: 16px;
    background-color: #fff;
-   color: #0B2341;
+   color: #0b2341;
    font-weight: bold;
    padding: 10px 30px;
    border-radius: 5px;
@@ -1845,23 +1845,22 @@ textarea {
    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .container-effect {
    position: relative;
- }
- 
- .container-effect .image {
+}
+
+.container-effect .image {
    opacity: 1;
    display: block;
    width: 100%;
    height: auto;
-   transition: .5s ease;
+   transition: 0.5s ease;
    backface-visibility: hidden;
    margin: 0 auto;
- }
- 
- .container-effect .middle {
-   transition: .5s ease;
+}
+
+.container-effect .middle {
+   transition: 0.5s ease;
    opacity: 0;
    position: absolute;
    top: 50%;
@@ -1869,25 +1868,25 @@ textarea {
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    text-align: center;
- }
- 
- .container-effect:hover .image {
+}
+
+.container-effect:hover .image {
    opacity: 0.3;
- }
- 
- .container-effect:hover .middle {
+}
+
+.container-effect:hover .middle {
    opacity: 1;
- }
- 
- .container-effect.text {
-   background-color: #04AA6D;
+}
+
+.container-effect.text {
+   background-color: #04aa6d;
    color: white;
    font-size: 16px;
    padding: 16px 32px;
- }
+}
 
- #popular .carousel-control-next-icon, 
- #popular .carousel-control-prev-icon {
+#popular .carousel-control-next-icon,
+#popular .carousel-control-prev-icon {
    background: #aaa;
    border-radius: 50%;
    display: flex;
@@ -1895,4 +1894,76 @@ textarea {
    justify-content: center;
    width: 40px;
    height: 40px;
+}
+
+/*Google translate*/
+.goog-te-gadget {
+   cursor: pointer;
+}
+
+.goog-te-gadget-simple {
+   background-color: transparent !important;
+   border: none !important;
+   border-radius: 10px;
+   display: flex !important;
+}
+
+a.goog-te-menu-value {
+   padding: 0 !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+   color: #ef6445 !important;
+   border: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+   display: none;
+}
+
+.goog-te-menu-value img {
+   display: none;
+}
+
+.goog-text-highlight {
+   background: transparent !important;
+   box-shadow: none !important;
+}
+
+.goog-te-gadget img {
+   background-image: url('../img/global.png') !important;
+   background-position: 0 0 !important;
+   background-size: cover !important;
+}
+
+.goog-te-banner-frame {
+   height: 0;
+   display: none;
+}
+
+.goog-te-menu2 {
+   border: none !important;
+}
+
+div#goog-gt-tt {
+   display: none !important;
+}
+
+.goog-te-menu2-item div,
+.goog-te-menu2-item:link div,
+.goog-te-menu2-item:visited div,
+.goog-te-menu2-item:active div {
+   color: #313841 !important;
+}
+
+body {
+   top: 0 !important;
+}
+
+.topper:nth-child(2) {
+   text-transform: unset;
+}
+
+.topper:last-child {
+   justify-content: flex-end;
 }
