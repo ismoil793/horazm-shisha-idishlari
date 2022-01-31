@@ -193,11 +193,16 @@ h6 {
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
-   background: var(--main-color);
    padding: 8px 20px;
    margin-left: 30px;
    border-radius: 4px;
    color: #fff !important;
+   background: rgb(218, 121, 0);
+   background: linear-gradient(
+      90deg,
+      rgba(218, 121, 0, 1) 0%,
+      rgba(168, 46, 0, 1) 85%
+   );
 }
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
@@ -1804,7 +1809,7 @@ textarea {
    padding: 60px;
    background-color: transparent;
    /* background-color: #152332; */
-   background-color: #d6e3f5;
+   background-color: #eff4fc;
    height: 500px;
    display: flex;
    justify-content: center;
@@ -1830,8 +1835,13 @@ textarea {
 
 .squares-item.first .squares-item-content,
 .squares-item.last .squares-item-content {
-   background-color: #ff6706;
    color: #fff;
+   background: rgb(218, 121, 0);
+   background: linear-gradient(
+      90deg,
+      rgba(218, 121, 0, 1) 0%,
+      rgba(168, 46, 0, 1) 100%
+   );
 }
 
 .about-btn {
@@ -1967,3 +1977,32 @@ body {
 .topper:last-child {
    justify-content: flex-end;
 }
+
+/*--------------------Button Line through---------*/
+/* .btn-line {
+   overflow: hidden;
+   position: relative;
+}
+
+.btb-line span {
+   z-index: 20;
+}
+
+.btn-line:after {
+   background: #fff;
+   content: '';
+   height: 155px;
+   left: -75px;
+   opacity: 0.2;
+   position: absolute;
+   top: -50px;
+   transform: rotate(35deg);
+   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+   width: 50px;
+   z-index: -10;
+}
+
+.btn-line:hover:after {
+   left: 120%;
+   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+} */
