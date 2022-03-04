@@ -2026,3 +2026,131 @@ body {
    left: 120%;
    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 } */
+
+
+
+
+/*---------------------------.news----------------------------*/
+.news-detail {
+   align-self: center;
+   max-width: 700px;
+}
+
+.news-date {
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   color: #ef6445;
+   background-color: #fff;
+   padding: 15px 20px;
+   border-radius: 2px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 24px;
+}
+
+.news-date span {
+   font-size: 34px;
+}
+
+.news-description {
+   font-size: 22px;
+   color: #454751;
+   margin-top: 20px;
+   font-weight: 500;
+}
+
+.news-info {
+   font-size: 17px;
+   color: #454751;
+   line-height: 30px;
+   margin-top: 20px;
+   margin-bottom: 25px;
+}
+
+.news-pic {
+   position: relative;
+   margin-top: 15%;
+}
+
+.news-pic img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   border-radius: 5px;
+}
+
+.news-block {
+   padding: 20px;
+   box-shadow: 0 0 4px -2px #4A57A0;
+   position: relative;
+}
+
+.news-block-title {
+   width: 400px;
+   text-align: center;
+   position: relative;
+   right: 300px;
+   background: #ef6445;
+   color: #fff;
+   border-radius: 5px;
+}
+
+.news-block-title h2 {
+   padding: 15px 0;
+   font-size: 26px;
+}
+
+.news-block-list {
+   color: #454751;
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.news-block-list a{
+   display: block;
+   text-decoration: none;
+   color: inherit;
+}
+
+.news-block-list-item {
+   padding: 20px 20px 15px 20px;
+   border-bottom: 1px solid #E3E5EB;
+   line-height: 30px;
+}
+
+.news-block-list-item:last-child {
+   border: none;
+}
+
+.news-block-list-item .date {
+   text-align: right;
+   font-size: 16px;
+   color: #BCC2CE;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.news-block-list-item .date span {
+   display: inline-block;
+   font-size: 16px;
+   vertical-align: middle;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.news-block-list-item .date span i{
+   margin-right: 5px;
+}
+
+.news-block-list-item .date svg {
+   fill: #BCC2CE;
+   margin-right: 5px;
+}
+
+/*---------------------------/.news----------------------------*/
