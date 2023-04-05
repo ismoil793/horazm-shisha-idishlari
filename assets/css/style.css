@@ -24,6 +24,14 @@ a:hover {
    text-decoration: none;
 }
 
+.contact form {
+   height: 412px;
+}
+
+#contact > div > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > div {
+   height: 220px;
+}
+
 h1,
 h2,
 h3,
@@ -290,6 +298,10 @@ h6 {
 }
 
 @media (max-width: 991px) {
+   #contact form {
+      margin-top: 20px;
+   }
+
    .mobile-nav-toggle {
       display: block;
    }
